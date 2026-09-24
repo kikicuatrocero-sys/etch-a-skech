@@ -19,7 +19,7 @@ function reset() {
     size = prompt("Escribe el tamaño");
     if (size === null) return null;
     size = Number(size);
-  } while (isNaN(size));
+  } while (isNaN(size) || size > 100);
   container.innerHTML = "";
   createGrid(size);
 }
